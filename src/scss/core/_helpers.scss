@@ -1,0 +1,246 @@
+$colors:  (
+    white white,
+    black black,
+    inherit inherit,
+);
+
+$bg-colors:  (
+    white white,
+    black black,
+    inherit inherit,
+);
+
+@each $type in $colors {
+  .color-#{nth($type, 1)} {
+    color: #{nth($type, 2)};
+  }
+}
+
+@each $type in $bg-colors {
+  .bg-#{nth($type, 1)} {
+    background-color: #{nth($type, 2)};
+  }
+}
+
+
+.fluid-x {
+  width: 100%;
+}
+
+.fluid-y {
+  height: 100%;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.flex-nowrap {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+
+.relative {
+  position: relative;
+}
+
+.disabled {
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.color {
+  &-grey {
+    color: $color-grey;
+
+    &-80 {
+      color: $color-grey--80;
+    }
+
+    &-60 {
+      color: $color-grey--60;
+    }
+
+    &-40 {
+      color: $color-grey--40;
+    }
+  }
+
+  &-blue {
+    color: $color-blue;
+
+    &-60 {
+      color: $color-blue--60;
+    }
+
+    &-40 {
+      color: $color-blue--40;
+    }
+  }
+
+  &-white {
+    color: white;
+  }
+
+  &-black {
+    color: black;
+  }
+
+  &-inherit {
+    color: inherit;
+  }
+}
+
+.bg {
+  &-white {
+    background-color: white;
+  }
+
+  &-danger {
+    background-color: $color-accent;
+  }
+
+  &-success {
+    background-color: $color-turquoise;
+  }
+
+  &-blue {
+    background-color: $color-blue;
+
+    &-5 {
+      background-color: $color-blue--5;
+    }
+  }
+
+  &-grey {
+    &-5 {
+      background-color: $color-grey--5;
+    }
+  }
+
+  &-yellow {
+    &-10 {
+      background-color: $color-yellow--10;
+    }
+  }
+}
+
+.color-gradient {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .color-gradient {
+    background: transparent !important;
+    background-image: inherit !important;
+    color: $color-blue;
+  }
+
+  .color-green--gradient {
+    color: $color-blue;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.cursor-default {
+  cursor: default;
+}
+
+.clip {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.max-line-2 {
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.max-line-4 {
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media screen and (min-width:0\0) and (min-resolution: +72dpi) {
+  // IE9+ CSS
+  .max-line-4{
+    max-height: 100px;
+  }
+}
+
+.z-first {
+  z-index: 1;
+}
+
+@media (min-width: 10px) {
+  .hide-sm {
+    display: none;
+  }
+
+  .show-sm {
+    display: block;
+
+    &.flex-container {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .hide-md {
+    display: none;
+  }
+
+  .show-md {
+    display: block;
+
+    &.flex-container, &.medium-flex-container {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $media-md) {
+  .hide-lg {
+    display: none;
+  }
+
+  .show-lg {
+    display: block;
+
+    &.flex-container, &.large-flex-container {
+      display: flex;
+    }
+  }
+}
+
+@media (min-width: $media-lg) {
+  .hide-xl {
+    display: none;
+  }
+
+  .show-xl {
+    display: block;
+
+    &.flex-container, &.large-flex-container {
+      display: flex;
+    }
+  }
+}

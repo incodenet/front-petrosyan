@@ -1,0 +1,111 @@
+.row .row.collapse {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.row.expanded {
+    max-width: none
+}
+
+.row.expanded .row {
+    margin-right: auto;
+    margin-left: auto
+}
+
+.row.collapse > .column,
+.row.collapse > .columns {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.row.collapse > .column > .row,
+.row.collapse > .columns > .row,
+.row.is-collapse-child {
+    margin-right: 0;
+    margin-left: 0
+}
+
+.small-collapse > .column,
+.small-collapse > .columns {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.small-uncollapse > .column,
+.small-uncollapse > .columns {
+    padding-right: .9375rem;
+    padding-left: .9375rem
+}
+
+@media print, screen and (min-width: 40em) and (min-width: 40em) {
+    .medium-expand {
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px
+    }
+}
+
+.row.medium-unstack > .column,
+.row.medium-unstack > .columns {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
+}
+
+@media print, screen and (min-width: 40em) {
+    .row.medium-unstack > .column,
+    .row.medium-unstack > .columns {
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px
+    }
+}
+
+@media print, screen and (min-width: $mediaMedium) {
+    .medium-collapse > .column, .medium-collapse > .columns {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .medium-uncollapse > .column, .medium-uncollapse > .columns {
+        padding-right: $columnSpace;
+        padding-left: $columnSpace;
+    }
+}
+
+@media print, screen and (min-width: $mediaLarge) and (min-width: $mediaLarge) {
+    .large-expand {
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+    }
+}
+
+.row.large-unstack > .column,
+.row.large-unstack > .columns {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%
+}
+
+@media print, screen and (min-width: $mediaLarge) {
+    .row.large-unstack > .column, .row.large-unstack > .columns {
+        -ms-flex: 1 1 0px;
+        flex: 1 1 0px;
+    }
+}
+
+@media print, screen and (min-width: $mediaLarge) {
+    .large-collapse > .column, .large-collapse > .columns {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .large-uncollapse > .column, .large-uncollapse > .columns {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem;
+    }
+}
+
+.column-block {
+    margin-bottom: 1.875rem
+}
+
+.column-block > :last-child {
+    margin-bottom: 0
+}

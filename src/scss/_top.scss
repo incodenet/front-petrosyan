@@ -1,0 +1,23 @@
+@import "core/_core";
+@import "core/_typography";
+@import "layouts/_grid";
+@import "layouts/_header";
+@import "components/_burger";
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: $baseFontFamily;
+  min-height: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+@import "_top.media";
