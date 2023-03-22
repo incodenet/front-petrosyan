@@ -4,7 +4,7 @@ $color-grey--60: #969696;
 $color-grey--40: #D7D7D7;
 $color-grey--20: #E9E9E9;
 
-$color-red: #EB0028;
+$color-danger: #EB0028;
 
 $color-black: #000000;
 
@@ -32,6 +32,6 @@ $gridBreakpoints: (
         'xx-large' 1440px,
 );
 
-$rowWidth: 1270px;
-$columnSpace: 20px;
+$rowWidth: rem(1200);
+$columnSpace: rem(20);
 $columnsSize: 12;

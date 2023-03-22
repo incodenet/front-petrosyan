@@ -448,22 +448,3 @@
 .inline-flex-container {
   display: inline-flex;
 }
-
-//@media (max-width: 1440px) {
-//  .row {
-//    max-width: 1067px;
-//  }
-//}
-
-
-@media (max-width: 480px) {
-  .column {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
-
-  .row .row {
-    margin-right: -8px;
-    margin-left: -8px;
-  }
-}

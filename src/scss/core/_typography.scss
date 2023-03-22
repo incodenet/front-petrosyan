@@ -8,9 +8,9 @@
   }
 }
 
-$text-sizes: ( 10, 12, 13, 14, 15, 18, 19, 20, 22, 24, 28, 30, 35, 40, 55 );
+$text-sizes: ( 12, 13, 14, 24 );
 
-$line-height-sizes: ( 75 75, 87 87, 100 100, 125 115, 130 120, 160 130, 150 125, 200 150, 225 180, 265 200, 337 250, 350 280, 425 300 );
+$line-height-sizes: ( 125, 143 );
 
 .text {
   @include font(normal, 16, 1, 0, 0);
@@ -98,4 +98,18 @@ $line-height-sizes: ( 75 75, 87 87, 100 100, 125 115, 130 120, 160 130, 150 125,
 
 .text-right {
   text-align: right
+}
+
+.max-line-3 {
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.max-line-4 {
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

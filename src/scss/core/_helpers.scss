@@ -1,4 +1,7 @@
 $colors:  (
+    'danger' $color-danger,
+    'grey' $color-grey,
+    'grey-80' $color-grey--80,
     white white,
     black black,
     inherit inherit,
@@ -50,82 +53,6 @@ $bg-colors:  (
   user-select: none;
 }
 
-.color {
-  &-grey {
-    color: $color-grey;
-
-    &-80 {
-      color: $color-grey--80;
-    }
-
-    &-60 {
-      color: $color-grey--60;
-    }
-
-    &-40 {
-      color: $color-grey--40;
-    }
-  }
-
-  &-blue {
-    color: $color-blue;
-
-    &-60 {
-      color: $color-blue--60;
-    }
-
-    &-40 {
-      color: $color-blue--40;
-    }
-  }
-
-  &-white {
-    color: white;
-  }
-
-  &-black {
-    color: black;
-  }
-
-  &-inherit {
-    color: inherit;
-  }
-}
-
-.bg {
-  &-white {
-    background-color: white;
-  }
-
-  &-danger {
-    background-color: $color-accent;
-  }
-
-  &-success {
-    background-color: $color-turquoise;
-  }
-
-  &-blue {
-    background-color: $color-blue;
-
-    &-5 {
-      background-color: $color-blue--5;
-    }
-  }
-
-  &-grey {
-    &-5 {
-      background-color: $color-grey--5;
-    }
-  }
-
-  &-yellow {
-    &-10 {
-      background-color: $color-yellow--10;
-    }
-  }
-}
-
 .color-gradient {
   -webkit-background-clip: text;
   background-clip: text;
@@ -136,11 +63,11 @@ $bg-colors:  (
   .color-gradient {
     background: transparent !important;
     background-image: inherit !important;
-    color: $color-blue;
+    color: $color-main;
   }
 
   .color-green--gradient {
-    color: $color-blue;
+    color: $color-main;
   }
 }
 
@@ -162,20 +89,6 @@ $bg-colors:  (
 
 .overflow-auto {
   overflow: auto;
-}
-
-.max-line-2 {
-  -webkit-line-clamp: 2;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}
-
-.max-line-4 {
-  -webkit-line-clamp: 4;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
 }
 
 @media screen and (min-width:0\0) and (min-resolution: +72dpi) {

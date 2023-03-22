@@ -1,6 +1,11 @@
 @import "utils/_module";
 @import "_top.scss";
+@import "components/_card";
 
-
+.listing {
+    margin-top: rem(48);
+    padding-bottom: 4%;
+}
 
 @import "_app.media";
+@import "core/_helpers";
