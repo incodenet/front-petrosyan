@@ -2,20 +2,20 @@ function toggleElements(opener, dropper, classname, bodyClip) {
   var openers = document.querySelectorAll(opener);
   var droppers = document.querySelectorAll(dropper);
 
-  for(var i=0; i < openers.length; i++) {
+  for( let i=0; i < openers.length; i++ ) {
     openers[i].addEventListener('click', function (e) {
       e.stopPropagation();
 
-      if (this.classList.contains(classname)) {
-        for(var t = 0; t < droppers.length; t++) {
+      if ( this.classList.contains(classname) ) {
+        for( let t = 0; t < droppers.length; t++ ) {
           openers[t].classList.remove(classname);
         }
 
-        for(var k = 0; k < droppers.length; k++) {
+        for( let k = 0; k < droppers.length; k++ ) {
           droppers[k].classList.remove(classname);
         }
 
-        if(bodyClip) {
+        if( bodyClip ) {
           document.querySelector("body").classList.remove(classname);
         }
       } else {
@@ -23,16 +23,57 @@ function toggleElements(opener, dropper, classname, bodyClip) {
 
         this.classList.add(classname);
 
-        for(var j=0; j < droppers.length; j++) {
+        for( let j=0; j < droppers.length; j++ ) {
           droppers[j].classList.add(classname);
         }
 
-        if(bodyClip) {
+        if( bodyClip ) {
           document.querySelector("body").classList.add(classname);
         }
       }
     })
   }
+}
+
+function toggleWrappedElements(opener, dropper, classname, closeSiblings) {
+  var openers = document.querySelectorAll(opener);
+  var droppers = document.querySelectorAll(dropper);
+
+  for (var i = 0; i < openers.length; i++) {
+    openers[i].addEventListener('click', function (e) {
+      e.stopPropagation();
+
+      if (this.classList.contains(classname)) {
+        if (closeSiblings) {
+          for (var t = 0; t < droppers.length; t++) {
+            openers[t].classList.remove(classname);
+          }
+
+          for (var k = 0; k < droppers.length; k++) {
+            droppers[k].classList.remove(classname);
+          }
+        } else {
+          this.classList.remove(classname);
+          this.parentNode.querySelector(dropper).classList.remove(classname);
+        }
+      } else {
+        if (closeSiblings) {
+          for (var ta = 0; ta < droppers.length; ta++) {
+            openers[ta].classList.remove(classname);
+          }
+
+          for (var ka = 0; ka < droppers.length; ka++) {
+            droppers[ka].classList.remove(classname);
+          }
+        }
+
+        this.classList.add(classname);
+        this.parentNode.querySelector(dropper).classList.add(classname);
+      }
+    })
+  }
+
+  preventCloseOnClick(dropper);
 }
 
 function scrollTo(element) {
@@ -43,15 +84,25 @@ function scrollTo(element) {
   });
 }
 
-function cancelActiveEvents() {
-  var drops = document.querySelectorAll('.has-drop');
-  var droppers = document.querySelectorAll('.dropper');
+function preventCloseOnClick(elem) {
+  var content = document.querySelectorAll(elem);
 
-  for(var i=0; i < drops.length; i++) {
+  for (var i = 0; i < content.length; i++) {
+    content[i].addEventListener("click", function (e) {
+      e.stopPropagation();
+    });
+  }
+}
+
+function cancelActiveEvents() {
+  const drops = document.querySelectorAll('.has-drop');
+  const droppers = document.querySelectorAll('.dropper');
+
+  for( let i=0; i < drops.length; i++ ) {
     drops[i].classList.remove('active', 'show');
   }
 
-  for(var j=0; j < droppers.length; j++) {
+  for( let j=0; j < droppers.length; j++ ) {
     droppers[j].classList.remove('active', 'show');
   }
 }

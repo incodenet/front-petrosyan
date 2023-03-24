@@ -131,7 +131,7 @@ $bg-colors:  (
 }
 
 @media (min-width: $media-md) {
-  .hide-lg {
+  .hide-lg, .hide-lg.flex-container {
     display: none;
   }
 
