@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2cc49354-48ef-46fd-a39e-9d34faef5410" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="ProjectId" id="1xAVQY8bkr7ZWpMo0IklT7rZsc1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../byblos" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2cc49354-48ef-46fd-a39e-9d34faef5410" name="Default Changelist" comment="" />
+      <created>1629797863476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1629797863476</updated>
+      <workItem from="1629797864849" duration="610000" />
+      <workItem from="1629798769597" duration="748000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="450" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1629798050382">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="450" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.860/1440.0.1920.1040@0.0.1440.860" timestamp="1629798050382" />
+    <state x="500" y="188" key="FileChooserDialogImpl" timestamp="1629809709001">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="500" y="188" key="FileChooserDialogImpl/0.0.1440.860/1440.0.1920.1040@0.0.1440.860" timestamp="1629809709001" />
+    <state x="428" y="257" key="com.intellij.ide.util.TipDialog" timestamp="1629798770083">
+      <screen x="0" y="0" width="1440" height="860" />
+    </state>
+    <state x="428" y="257" key="com.intellij.ide.util.TipDialog/0.0.1440.860/1440.0.1920.1040@0.0.1440.860" timestamp="1629798770083" />
+  </component>
+</project>
