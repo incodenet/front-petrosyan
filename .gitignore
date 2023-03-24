@@ -2,7 +2,6 @@
 /.env
 /.idea
 /dist
-/build
 ###< symfony/framework-bundle ###
 ###> symfony/webpack-encore-pack ###
 /node_modules/
@@ -21,5 +20,4 @@ yarn-error.log
 
 .idea
 dist
-build
 yarn.lock

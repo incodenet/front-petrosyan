@@ -20,7 +20,8 @@ const gulp = require('gulp'),
     iconfont = require('gulp-iconfont'),
     iconfontCss = require('gulp-iconfont-css'),
     fileinclude = require('gulp-file-include'),
-    sassUnicode = require('gulp-sass-unicode');
+    sassUnicode = require('gulp-sass-unicode'),
+    ghPages = require('gulp-gh-pages');
 
 const path = {
     build: {
@@ -148,6 +149,11 @@ function browserSyncReload(done) {
 
 function clean() {
     return del(path.clean);
+}
+
+function deploy() {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages())
 }
 
 function watchFiles() {
